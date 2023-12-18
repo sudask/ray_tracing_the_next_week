@@ -1,0 +1,125 @@
+# 忽略编译生成的文件
+bin/
+build/
+
+# 忽略IDE或编辑器生成的文件
+.vscode/
+.idea/
+*.suo
+*.user
+*.sdf
+*.opensdf
+*.sln.docstates
+
+# 忽略构建和编译临时文件
+*.o
+*.obj
+*.log
+*.out
+*.exe
+
+# 忽略库文件
+*.lib
+*.dll
+*.a
+
+# 忽略自动生成的文件
+*.gch
+*.pch
+
+# 忽略一些系统或编辑器产生的文件
+Thumbs.db
+.DS_Store
+
+# 忽略CMake构建目录
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+
+# 忽略Makefile生成的文件
+Makefile
+makefile
+CMakeLists.txt.user
+
+# 忽略Visual Studio项目文件
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+
+# 忽略Xcode项目文件
+*.xcodeproj/
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+# 忽略Clion项目文件
+.idea/
+
+# 忽略Eclipse项目文件
+.settings/
+*.project
+*.cproject
+
+# 忽略Boost相关的构建文件
+boost-*/
+.boost-*/
+
+# 忽略Code::Blocks项目文件
+*.cbp
+*.layout
+*.depend
+
+# 忽略Qt Creator项目文件
+*.pro.user
+*.qmlproject.user
+*.conf
+*.xcconfig
+
+# 忽略Sublime Text项目文件
+*.sublime-project
+*.sublime-workspace
+
+# 忽略vim swap文件
+.swp
+
+# 忽略emacs autosave文件
+*~
+
+# 忽略C++编译器生成的文件
+*.i
+*.ii
+*.s
+
+# 忽略Cppcheck报告文件
+cppcheck_report.txt
+
+# 忽略编译器生成的Makefile
+Makefile.in
+
+# 忽略配置文件
+config.h
+config.h.in
+
+# 忽略Doxygen生成的文件
+doxygen/
+
+# 忽略压缩文件
+*.zip
+*.gz
+*.tar
+*.rar
+
+# 忽略自动生成的文件
+*.orig
+
+# 忽略编译时生成的文件
+CMakeLists.txt.user
+*.sdf
+*.opensdf
+*.user
+*.suo
+*.user
+*.db
+*.db-shm
+*.db-wal
