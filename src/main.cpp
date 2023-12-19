@@ -48,6 +48,14 @@ hitable *two_spheres() {
     return new hitable_list(list, 2);
 }
 
+hitable *two_perlin_spheres() {
+    texture *pertext = new noise_texture();
+    hitable **list = new hitable*[2];
+    list[0] = new sphere(vec3(0, -1000, 0), 1000, new lambertian(pertext));
+    list[1] = new sphere(vec3(0, 2, 0), 2, new lambertian(pertext));
+    return new hitable_list(list, 2);
+}
+
 vec3 color(const ray& r, hitable *world, int depth) {
     hit_record rec;
     if(world->hit(r, 0.001, FLT_MAX, rec)) {
@@ -86,7 +94,7 @@ int main() {
     // hitable_list *world = new hitable_list(list, 2);
 
     // image on the cover of the book
-    hitable *world = two_spheres();
+    hitable *world = two_perlin_spheres();
 
     vec3 lookfrom(13, 2, 3);
     vec3 lookat(0, 0, 0);
